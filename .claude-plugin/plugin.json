@@ -1,0 +1,19 @@
+{
+  "name": "ai-honesty-badge",
+  "version": "1.0.0",
+  "description": "Label content with an honest AI disclosure badge (No AI, AI Assisted, AI Generated), picked from what actually happened in the session.",
+  "author": {
+    "name": "Steven Hylands",
+    "url": "https://www.aihonestybadge.com"
+  },
+  "homepage": "https://www.aihonestybadge.com",
+  "repository": "https://github.com/shylands/ai-honesty-badge",
+  "license": "CC0-1.0",
+  "keywords": [
+    "ai",
+    "disclosure",
+    "badge",
+    "transparency",
+    "readme"
+  ]
+}

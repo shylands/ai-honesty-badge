@@ -1,0 +1,14 @@
+{
+  "name": "ai-honesty-badge",
+  "owner": { "name": "Steven Hylands", "url": "https://www.aihonestybadge.com" },
+  "metadata": {
+    "description": "AI Honesty Badge: honest AI disclosure badges for blog posts, READMEs and docs."
+  },
+  "plugins": [
+    {
+      "name": "ai-honesty-badge",
+      "source": "./",
+      "description": "Adds the right AI disclosure badge to content Claude helped make."
+    }
+  ]
+}

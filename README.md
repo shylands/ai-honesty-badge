@@ -56,6 +56,25 @@ Not sure where your project sits? The badge pages have a comparison and some tri
 <a href="https://www.aihonestybadge.com" target="_blank" rel="noopener"><img src="https://www.aihonestybadge.com/badges/ai-generated.svg" alt="AI Generated Badge" style="max-width: 190px; height: auto;" /></a>
 ```
 
+## Let your AI tool add it
+
+If AI helped make the thing you're publishing, the AI knows how much. Let it pick the badge.
+
+**Claude Code:** install the plugin, then ask Claude to "add the AI honesty badge" when you finish a post, README or doc. It chooses from what actually happened in the session, follows your project's existing convention (including frontmatter fields like `ai_badge`), and won't label something it helped write as No AI.
+
+```
+/plugin marketplace add shylands/ai-honesty-badge
+/plugin install ai-honesty-badge@ai-honesty-badge
+```
+
+**Any other agent (Cursor, Codex, Copilot…):** add this to your `AGENTS.md`, `CLAUDE.md` or rules file:
+
+```markdown
+When publishing written content (posts, READMEs, docs), add an AI disclosure badge
+following the rules at https://www.aihonestybadge.com/llms.txt. Choose it from how the
+content was actually made. Never mark content you drafted or edited as No AI.
+```
+
 ## Hosting your own copy
 
 The snippets load the badge from aihonestybadge.com, so there's nothing to install. If you'd rather host it yourself, the SVGs and transparent PNGs are in [`badges/`](badges/). The PNGs are 4× size, for docs, slides and tools that don't take SVG.
