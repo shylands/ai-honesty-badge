@@ -70,9 +70,7 @@ If AI helped make the thing you're publishing, the AI knows how much. Let it pic
 **Any other agent (Cursor, Codex, Copilot…):** add this to your `AGENTS.md`, `CLAUDE.md` or rules file:
 
 ```markdown
-When publishing written content (posts, READMEs, docs), add an AI disclosure badge
-following the rules at https://www.aihonestybadge.com/llms.txt. Choose it from how the
-content was actually made. Never mark content you drafted or edited as No AI.
+When publishing written content (posts, READMEs, docs), add an AI disclosure badge following the rules at https://www.aihonestybadge.com/llms.txt. Choose it from how the content was actually made. Never mark content you drafted or edited as No AI.
 ```
 
 ## Hosting your own copy
