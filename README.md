@@ -56,6 +56,22 @@ Not sure where your project sits? The badge pages have a comparison and some tri
 <a href="https://www.aihonestybadge.com" target="_blank" rel="noopener"><img src="https://www.aihonestybadge.com/badges/ai-generated.svg" alt="AI Generated Badge" style="max-width: 190px; height: auto;" /></a>
 ```
 
+## Dark backgrounds
+
+On a dark site the standard badge's dark label disappears. Each badge has a dark-background version with a light label: add `-dark` to the filename.
+
+[![No AI Badge](https://www.aihonestybadge.com/badges/no-ai-dark.svg)](https://www.aihonestybadge.com/no-ai-badge) [![AI Assisted Badge](https://www.aihonestybadge.com/badges/ai-assisted-dark.svg)](https://www.aihonestybadge.com/ai-assisted-badge) [![AI Generated Badge](https://www.aihonestybadge.com/badges/ai-generated-dark.svg)](https://www.aihonestybadge.com/ai-generated-badge)
+
+```markdown
+[![AI Assisted Badge](https://www.aihonestybadge.com/badges/ai-assisted-dark.svg)](https://www.aihonestybadge.com)
+```
+
+Or let it switch with the reader's light or dark mode. This works on websites and in GitHub READMEs:
+
+```html
+<a href="https://www.aihonestybadge.com" target="_blank" rel="noopener"><picture><source media="(prefers-color-scheme: dark)" srcset="https://www.aihonestybadge.com/badges/ai-assisted-dark.svg"><img src="https://www.aihonestybadge.com/badges/ai-assisted.svg" alt="AI Assisted Badge" style="max-width: 190px; height: auto;"></picture></a>
+```
+
 ## Let your AI tool add it
 
 If AI helped make the thing you're publishing, the AI knows how much. Let it pick the badge.
