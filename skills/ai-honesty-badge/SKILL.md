@@ -3,7 +3,7 @@ name: ai-honesty-badge
 description: Adds an honest AI disclosure badge (No AI, AI Assisted or AI Generated, from aihonestybadge.com) to written work such as blog posts, READMEs, docs, articles and release notes, choosing the badge from what actually happened in the session. Use when the user asks to add an AI badge, AI disclosure or "AI honesty badge", asks which badge fits, says /ai-honesty-badge, or finishes a piece of content in a project that already uses aihonestybadge.com badges or an ai_badge-style frontmatter field.
 metadata:
   author: "Steven Hylands"
-  version: "1.1.0"
+  version: "1.2.0"
   homepage: "https://www.aihonestybadge.com"
 ---
 
@@ -49,7 +49,8 @@ Look before you insert anything:
    - Markdown files (`.md`, `.mdx`, READMEs): the Markdown snippet.
    - HTML, JSX or templates: the HTML snippet (use `className` instead of `class` in JSX, and a style object instead of the style string).
    - **Placement:** end of a blog post or article. In a README, put it with any existing badge row at the top, otherwise at the end.
-4. **Dark backgrounds.** If the site or page is dark (check the CSS, theme config or existing styles), use the `-dark` version: add `-dark` before the extension (`ai-assisted-dark.svg`). It has a light label so it stays readable. If an existing badge already uses one version, match it. For READMEs, or when you can't tell, the `<picture>` snippet below switches automatically with the reader's theme.
+4. **Size.** Use Small (`-small`, 20px tall) in READMEs and badge rows, where it matches shields.io badges. Use Large (`-large`, 28px) at the end of a post, in a footer or on a portfolio. One version works on light and dark pages.
+5. **Older badges.** If the project already uses an older AI Honesty file (`no-ai.svg`, `ai-assisted-dark.svg` and so on), those still work. Match it, and mention that the current `-small`/`-large` version exists.
 
 ## 3. Snippets
 
@@ -58,28 +59,20 @@ Use these exactly. Don't restyle, recolour or rehost the badge unless the person
 **Markdown**
 
 ```markdown
-[![No AI Badge](https://www.aihonestybadge.com/badges/no-ai.svg)](https://www.aihonestybadge.com)
-[![AI Assisted Badge](https://www.aihonestybadge.com/badges/ai-assisted.svg)](https://www.aihonestybadge.com)
-[![AI Generated Badge](https://www.aihonestybadge.com/badges/ai-generated.svg)](https://www.aihonestybadge.com)
+[![No AI](https://www.aihonestybadge.com/badges/no-ai-small.svg)](https://www.aihonestybadge.com)
+[![AI Assisted](https://www.aihonestybadge.com/badges/ai-assisted-small.svg)](https://www.aihonestybadge.com)
+[![AI Generated](https://www.aihonestybadge.com/badges/ai-generated-small.svg)](https://www.aihonestybadge.com)
 ```
 
-**HTML**
+**HTML** (works in GitHub READMEs too)
 
 ```html
-<a href="https://www.aihonestybadge.com" target="_blank" rel="noopener"><img src="https://www.aihonestybadge.com/badges/no-ai.svg" alt="No AI Badge" style="max-width: 190px; height: auto;" /></a>
-<a href="https://www.aihonestybadge.com" target="_blank" rel="noopener"><img src="https://www.aihonestybadge.com/badges/ai-assisted.svg" alt="AI Assisted Badge" style="max-width: 190px; height: auto;" /></a>
-<a href="https://www.aihonestybadge.com" target="_blank" rel="noopener"><img src="https://www.aihonestybadge.com/badges/ai-generated.svg" alt="AI Generated Badge" style="max-width: 190px; height: auto;" /></a>
+<a href="https://www.aihonestybadge.com" target="_blank" rel="noopener"><img src="https://www.aihonestybadge.com/badges/no-ai-small.svg" alt="No AI" height="20"></a>
+<a href="https://www.aihonestybadge.com" target="_blank" rel="noopener"><img src="https://www.aihonestybadge.com/badges/ai-assisted-small.svg" alt="AI Assisted" height="20"></a>
+<a href="https://www.aihonestybadge.com" target="_blank" rel="noopener"><img src="https://www.aihonestybadge.com/badges/ai-generated-small.svg" alt="AI Generated" height="20"></a>
 ```
 
-Transparent PNGs exist at the same URLs with `.png` for places that don't take SVG.
-
-**Auto light/dark** (HTML, and GitHub READMEs, which render it):
-
-```html
-<a href="https://www.aihonestybadge.com" target="_blank" rel="noopener"><picture><source media="(prefers-color-scheme: dark)" srcset="https://www.aihonestybadge.com/badges/ai-assisted-dark.svg"><img src="https://www.aihonestybadge.com/badges/ai-assisted.svg" alt="AI Assisted Badge" style="max-width: 190px; height: auto;"></picture></a>
-```
-
-Swap `ai-assisted` for `no-ai` or `ai-generated` in both URLs and the alt text.
+For Large, swap `-small` for `-large` and `height="20"` for `height="28"`. Transparent PNGs exist at the same URLs with `.png` for places that don't take SVG.
 
 ## Don't
 
