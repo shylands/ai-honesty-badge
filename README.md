@@ -1,6 +1,6 @@
 # AI Honesty Badge
 
-Free AI disclosure badges for your README, website or blog. Say whether your work was made with **no AI**, with **AI assistance**, or **mostly by AI**.
+Free AI disclosure badges for your README, website or blog. Say whether your work was made with **no AI**, with **AI assistance**, or **by AI from a brief**.
 
 [![No AI](https://www.aihonestybadge.com/badges/no-ai-large.svg)](https://www.aihonestybadge.com/no-ai-badge) [![AI Assisted](https://www.aihonestybadge.com/badges/ai-assisted-large.svg)](https://www.aihonestybadge.com/ai-assisted-badge) [![AI Generated](https://www.aihonestybadge.com/badges/ai-generated-large.svg)](https://www.aihonestybadge.com/ai-generated-badge)
 
