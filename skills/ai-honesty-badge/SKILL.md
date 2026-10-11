@@ -3,7 +3,7 @@ name: ai-honesty-badge
 description: Adds an honest AI disclosure badge (No AI, AI Assisted or AI Generated, from aihonestybadge.com) to written work such as blog posts, READMEs, docs, articles and release notes, choosing the badge from what actually happened in the session. Use when the user asks to add an AI badge, AI disclosure or "AI honesty badge", asks which badge fits, says /ai-honesty-badge, or finishes a piece of content in a project that already uses aihonestybadge.com badges or an ai_badge-style frontmatter field.
 metadata:
   author: "Steven Hylands"
-  version: "1.2.0"
+  version: "1.3.0"
   homepage: "https://www.aihonestybadge.com"
 ---
 
@@ -17,25 +17,34 @@ The badges only work because people are honest with them. Nobody verifies them. 
 
 Decide per piece of content (one post, one README), based on what happened to *that* content.
 
+**The badge says who led the work, not who typed it.** You will usually have produced most of the words or code. That alone does not make it AI Generated. The test between the two AI badges: did the person shape the work, or just accept it?
+
 | Badge | Choose it when |
 |---|---|
-| **AI Generated** | You drafted most of the words, code or images. The person mainly prompted, chose between versions, reviewed or lightly edited. |
-| **AI Assisted** | The person led the work: they chose what it's about and wrote or substantially rewrote it. You helped with ideas, outlines, editing, some sections, some images or code, or fact and logic checks. |
+| **AI Assisted** | The person led. They decided what to make, directed it and shaped the result over rounds of feedback: rejecting output, changing the approach, deciding what stays. It stays AI Assisted even when you wrote the first draft or produced most of the words, code or images. Directing through prompts alone counts as shaping. |
+| **AI Generated** | The person gave you a brief and published roughly what came back. They may have picked between versions, checked it and made light fixes, but didn't shape it. |
 | **No AI** | No generative AI produced or rewrote any of the words, images or code. Spell check and basic grammar fixes are fine. |
+
+**Judging it from the session:**
+
+- The person gave direction beyond the first request (changed the approach, rejected something, made the design or editorial decisions, supplied the ideas and opinions) → **AI Assisted**.
+- One request, and they took what you produced → **AI Generated**.
+- Most of the work's history is outside this session, or you can't tell which it was → **ask one short question** rather than guess: "Did you direct and shape this, or is it mostly what I produced from your brief?"
 
 **Rules:**
 
 - **Never choose No AI for content you drafted, rewrote or edited in this session.** If you touched the substance, it's at least AI Assisted.
 - Only apply No AI when the person tells you they made it without AI and you're just adding the badge.
-- If you drafted it and the person then rewrote it heavily, or most of its history is outside this session, **ask one short question** rather than guess: "Did you rewrite most of this yourself, or is it mostly my draft?"
+- Don't round up to AI Generated out of caution. Calling a person's directed work "generated" is as inaccurate as calling your draft "No AI".
 - Tricky cases:
   - AI translation of the person's own writing → AI Assisted.
   - AI made the images, the person wrote every word → AI Assisted for the piece. Suggest saying which part AI made.
   - A grammar tool rewrote sentences → AI Assisted. Pure spelling and grammar fixes → No AI.
-  - AI coding help → AI Assisted if the person designed and reviewed it, AI Generated if you wrote most of it.
-  - A heavily edited AI image → still AI Generated. It started with AI.
+  - AI coding help → AI Assisted if the person decided what to build, directed it and reviewed it, even if you wrote all the code. AI Generated if they described what they wanted and shipped what you built.
+  - An AI image the person iterated on or edited → AI Assisted. An AI image taken as it first came → AI Generated.
+  - You wrote the first draft and the person reworked it → AI Assisted.
 
-Tell the person which badge you chose and why, in one line, e.g. "AI Assisted: you wrote the post, I tightened sections 2 and 3." They can change it.
+Tell the person which badge you chose and why, in one line, e.g. "AI Assisted: you directed the design and decisions, I wrote the code." They can change it.
 
 If they ask for a *less* AI badge than the evidence supports (e.g. No AI on something you drafted), say plainly that it wouldn't be accurate. It's their call after that, but don't change it silently.
 

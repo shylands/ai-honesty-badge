@@ -12,7 +12,7 @@ Pick the one that honestly describes your project, copy the snippet, paste it in
 |---|---|---|
 | ![No AI](https://www.aihonestybadge.com/badges/no-ai-small.svg) | Made by people, start to finish, without AI. | [When to use it](https://www.aihonestybadge.com/no-ai-badge) |
 | ![AI Assisted](https://www.aihonestybadge.com/badges/ai-assisted-small.svg) | A person led the work, and AI helped along the way. | [When to use it](https://www.aihonestybadge.com/ai-assisted-badge) |
-| ![AI Generated](https://www.aihonestybadge.com/badges/ai-generated-small.svg) | AI did most of the work, with a person directing. | [When to use it](https://www.aihonestybadge.com/ai-generated-badge) |
+| ![AI Generated](https://www.aihonestybadge.com/badges/ai-generated-small.svg) | AI made it from a brief, with little shaping by a person. | [When to use it](https://www.aihonestybadge.com/ai-generated-badge) |
 
 Not sure where your project sits? The badge pages have a comparison and some tricky cases, like AI code assistants and AI translation.
 
